@@ -651,10 +651,10 @@
                     })
 
                     //Promise rejected - revert the node to its original position.
-                    .catch(function () {
+                    ['catch'](function () {
                       bindDragStartEvents();
                     })
-                    .finally(function () {
+                    ['finally'](function () {
 
                       //Replace placeholder with newly dropped element.
                       hiddenPlaceElm.replaceWith(scope.$element);
